@@ -35,3 +35,11 @@ xyxyn: tensor([[0.2775, 0.6361, 0.3018, 0.7284]])
 - Here, 3 refers to the class being detected. For more details, refer to [data.yaml](training%2Ffootball-players-detection-1%2Fdata.yaml) file. 
 - The next 4 numbers refers to the xyxy size of bounding box
 10. Move the [football-players-detection-1](training%2Ffootball-players-detection-1) folder within a duplicate folder with same name. It is a necessary step needed for training. For the same, we will write a reproducible code in Jupyter
+11. Now, for the TRAINING part, we need Google Collab as it provides GPU for model training.
+12. The parameters entitled for training are:  
+- task=detect ~ it refers to the task to be done by machine  
+- mode=train  ~ the mode in which machine is being used rn
+- model=yolov5l.pt  ~ model number and version
+- data={dataset.location}/data.yaml ~ location of data 
+- epochs=100 ~ One single pass through the whole training dataset is called an epoch
+- imgsz=640 ~ refers to the image size of each training data
